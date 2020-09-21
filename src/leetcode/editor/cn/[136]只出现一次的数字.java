@@ -32,6 +32,11 @@ class SingleNumber {
      * 　　2. a ^ b ^ c = a ^ (b ^ c) = (a ^ b) ^ c;
      * 　　3. d = a ^ b ^ c 可以推出 a = d ^ b ^ c.
      * 　　4. a ^ b ^ a = b
+     *
+     * （1）0异或任何数 = 任何数；
+     * （2）1异或任何数 = 任何数取反；
+     * （3）任何数异或自己 = 把自己置0
+     * 根据（1）、（3）可得出： a ^ b ^ a = b
      */
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
