@@ -11,7 +11,13 @@
 ```java
 Math.max(i1,i2)
 ```
-                                                               
+    
+# 字符串
+```java
+char [] c = str.toCharArray() 转换为字符数组
+str.equalsIgnoreCase(str2);
+```
+                                                           
 # 数组
 
 
