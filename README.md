@@ -37,6 +37,14 @@ map.containsKey(key)
 ### 解题技巧
 1. 快慢指针（有时3个指针）
 prev curr next
+```java
+            while (curr != null) {
+                ListNode next = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = next;
+            }
+```
 
 # 栈Stack
 1. 

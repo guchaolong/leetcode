@@ -38,17 +38,17 @@ class ReverseLinkedList {
                 return head;
             }
 
-            ListNode pre = null;
-            ListNode cur = head;
+            ListNode prev = null;
+            ListNode curr = head;
 
-            while (cur != null) {
-                ListNode temp = cur.next;
-                cur.next = pre;
-                pre = cur;
-                cur = temp;
+            while (curr != null) {
+                ListNode next = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = next;
             }
 
-            return pre;
+            return prev;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
