@@ -47,12 +47,11 @@ prev curr next
 ```
 
 # 栈Stack
-1. 
-    ```java
+```java
     压栈：push(E)；
     弹出：pop(E)；
     取但不弹出：peek(E)
-    ```
+```
    > 155
 
 # 队列Queue
