@@ -42,7 +42,7 @@ class LongestSubstringWithoutRepeatingCharacters {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int lengthOfLongestSubstring(String s) {
-            int left = 0;//左指针
+            int left = 0;//左边界
             int maxLen = 0;
             Map<Character, Integer> map = new HashMap<>();
             for (int i = 0; i < s.length(); i++) {
