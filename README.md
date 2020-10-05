@@ -19,7 +19,10 @@ str.equalsIgnoreCase(str2);
 ```
                                                            
 # 数组
-
+```java
+Arrays.sort(int [] arr) 排序
+Arrays.equals(arr1, arr2) 数组比较
+```
 
 
 
@@ -28,6 +31,12 @@ str.equalsIgnoreCase(str2);
 map.containsKey(key)
 ```
 >1、
+
+
+# 链表
+### 解题技巧
+1. 快慢指针（有时3个指针）
+prev curr next
 
 # 栈Stack
 1. 
