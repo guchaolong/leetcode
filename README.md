@@ -55,6 +55,16 @@ prev curr next
     ```
    > 155
 
+# 队列Queue
+
+```java
+Queue<Integer> queue = new Queue<>();
+Queue<Integer> queue = new LinkedList<>();
+Queue<Integer> queue = new PriorityQueue<>(n);
+```
+
+
+
 # 多线程
 1. `Semphore` 可控制执行顺序 
     ```java
