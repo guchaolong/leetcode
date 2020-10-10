@@ -57,7 +57,6 @@ class H2O {
     Semaphore semaphore_H = new Semaphore(2);
     Semaphore semaphore_O = new Semaphore(0);
 
-
     public H2O() {
 
     }
