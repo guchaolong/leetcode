@@ -101,6 +101,7 @@ class LruCache {
         }
 
 
+        //获取，并移动到头部
         public int get(int key) {
             DoubleLinkedNode node = map.get(key);
             if (node == null) {
@@ -111,12 +112,13 @@ class LruCache {
         }
 
 
+        //添加或修改
         public void put(int key, int value) {
             DoubleLinkedNode node = map.get(key);
-            if (node != null) {
+            if (node != null) {//修改，移动到头部
                 node.val = value;
                 moveToHead(node);
-            } else {
+            } else {//添加，添加到头部
                 node = new DoubleLinkedNode(key, value);
                 map.put(key, node);
                 addToHead(node);
