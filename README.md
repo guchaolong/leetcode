@@ -1,3 +1,6 @@
+# 排序
+> 冒选快插，冒插稳，快NlogN
+
 # 位运算
 1. 异或
     ```
@@ -21,7 +24,7 @@ Math.max(i1,i2)
 
 ```java
 char [] c = str.toCharArray() 转换为字符数组
-str.equalsIgnoreCase(str2);
+str.equalsIgnoreCase(str2); 
 ```
 
 
