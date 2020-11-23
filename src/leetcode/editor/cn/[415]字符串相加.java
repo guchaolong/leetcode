@@ -20,7 +20,6 @@ class AddStrings {
         Solution solution = new AddStrings().new Solution();
         String s = solution.addStrings("1", "9");
         System.out.println(s);
-
     }
 
 
@@ -39,7 +38,6 @@ class AddStrings {
                 result.append(sum % 10);
             }
             return new String(result.reverse());
-
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
