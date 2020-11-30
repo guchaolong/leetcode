@@ -51,13 +51,18 @@ public class T0 {
     public static void prime() {
         int sum = 0;
         for (int i = 101; i < 201; i++) {
+            boolean b = true;
             for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
-                    sum++;
-                    System.out.print(i + " ");
-                    if (sum % 10 == 0) {
-                        System.out.println();
-                    }
+                    b=false;
+                    break;
+                }
+            }
+            if (b){
+                sum++;
+                System.out.print(i + " ");
+                if (sum % 10 == 0) {
+                    System.out.println();
                 }
             }
         }
@@ -135,8 +140,8 @@ public class T0 {
     public static void main(String[] args) {
 //        rabbit(20);
 //        System.out.println(rabbit2(20));
-//        prime();
-//        flower();
+        prime();
+        flower();
         fen();
 //        zxgy();
     }

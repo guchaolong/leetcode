@@ -23,6 +23,7 @@ public class V5_ActomicInteger {
                 }
             }
         }).start();
+
         new Thread(()->{
             int count = 10;
             while (count > 0){
@@ -33,6 +34,7 @@ public class V5_ActomicInteger {
                 }
             }
         }).start();
+
         new Thread(()->{
             int count = 10;
             while (count > 0){
