@@ -64,32 +64,8 @@ prev curr next
 
 # 栈Stack
 
-```java
-    压栈：push(E)；
-    弹出：pop(E)；
-    取但不弹出：peek(E)
-```
-   > 155
 
-
-
-# 队列Queue
-
-
-
-```java
-Queue<Integer> queue = new Queue<>();
-
-
-
-//双端队列
-LinkedList<Integer> queue = new LinkedList<>();
-queue.pollLast()
-queue.peekLast()
-queue.addLast    
-    
-
-//优先队列，Min Heap  默认按从小到大 queue.peek()返回n个元素中的最小
+优先队列，Min Heap  默认按从小到大 queue.peek()返回n个元素中的最小
 Queue<Integer> queue = new PriorityQueue<>(n);
 ```
 
@@ -102,3 +78,11 @@ Queue<Integer> queue = new PriorityQueue<>(n);
    release(n)释放n个执行许可(+n)
    ```
     >1114、1117
+
+........
+
+
+
+
+
+
