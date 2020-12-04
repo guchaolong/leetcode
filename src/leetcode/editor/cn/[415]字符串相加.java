@@ -18,7 +18,10 @@ package leetcode.editor.cn;
 class AddStrings {
     public static void main(String[] args) {
         Solution solution = new AddStrings().new Solution();
-        String s = solution.addStrings("1", "9");
+        String s = solution.addStrings("143224342312312", "94365363645756756345534123");
+//        94365363645756756345534123
+           //        143224342312312
+//        94365363645899980687846435
         System.out.println(s);
     }
 
