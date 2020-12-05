@@ -85,4 +85,8 @@ public class SwapSort {
         //递归调用右半数组
         quickSort(arr, i + 1, high);
     }
+
+    public static void main(String[] args) {
+        quickSort(new int[]{4, 5, 1, 6, 2, 8, 7}, 0, 6);
+    }
 }
