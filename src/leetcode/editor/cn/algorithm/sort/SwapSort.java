@@ -19,24 +19,31 @@ package leetcode.editor.cn.algorithm.sort;
 public class SwapSort {
     /**
      * 冒泡排序
-     * <p>
-     * 第1个  分别和第2、3、4...n个比较，把最小的放到第1个位置
-     * 第2个  分别和第3、4、5...n个比较....
+     *
+     * 第一趟：
+     * 0-1 1-2 2-3 3-4...(n-2)-(n-1)   每次对比，前面比后面大则交互，最大的数就移到了n-1位置
+     * 第二趟：
+     * 0-1 1-2 2-3 3-4...(n-3)-(n-2)   n-2这个位置为第二大的数
      * ...
-     * 第n-1个 和第n个比较...小的放前面
-     * <p>
+     * 第n-1趟：
+     * 0-1                             2这个位置为第二大的数
+     *
+     * j的范围为： 0-(n-2) 由外层循环的i来控制
      * 时间复杂度 O(N²)
      * 时间复杂度 O(1)
      */
     public static void bubbleSort(int[] arr) {
-        if (arr == null || arr.length == 0)
+        if (arr == null || arr.length == 0) {
             return;
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] > arr[j]) {
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
+        }
+        for (int i = arr.length - 1; i > 0; i--) {
+            System.out.println("第" + (arr.length - i) + "趟排序开始：");
+            for (int j = 0; j < i; j++) {
+                System.out.println("位置 " + j + "-" + (j + 1) + " 对比");
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }

@@ -14,12 +14,14 @@ public class No1_Array {
          */
         int len = 10;
         int [] nums = new int[len];
+        int[] num = new int[]{3, 4};
+        int[] nums1 = {1, 2, 3};
         int [][] nums2 = new int[len][];
         int [][][] nums3 = new int[len][][];
 
-        int[][] nums4 = {{1, 2, 3}, {2, 4}, {4, 5, 6}};
-        System.out.println(nums4.length);
-        System.out.println(nums4[2][2]);
+        int[][] nums4 = {{1, 2, 3}, {7, 4}, {9, 5, 6}};
+        System.out.println(nums4.length);//3
+        System.out.println(nums4[0][2]);//3
 
         /**
          * 2、一维数组：数组复制

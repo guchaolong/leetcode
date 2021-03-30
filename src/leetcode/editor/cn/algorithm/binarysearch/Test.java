@@ -25,7 +25,7 @@ public class Test {
 //        int L, R;
 //        int mid = (L + R) / 2        //如果L R都非常非常大，可能出现溢出
 //        int mid = L + (R -L) / 2     //防止溢出
-//        int mid = L + (R -L) >> 2    //位运算更快
+//        int mid = L + (R -L) >> 1    //位运算更快
 
         while (arr[mid] != key) {
             if (key > arr[mid]) {

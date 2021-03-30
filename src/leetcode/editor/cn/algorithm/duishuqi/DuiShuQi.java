@@ -8,8 +8,11 @@ package leetcode.editor.cn.algorithm.duishuqi;
  */
 public class DuiShuQi {
     public static void main(String[] args) {
+        int[] ints = generateRandomArray(20, 10);
+        for (int anInt : ints) {
+            System.out.print(anInt + ",");
+        }
 
-        System.out.println(generateRandomArray(10, 9));
     }
 
     public static int[] generateRandomArray(int maxSize, int maxValue) {
